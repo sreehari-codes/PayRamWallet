@@ -13,9 +13,20 @@
 		56B5B15E2DD1C658004E7530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B5B15C2DD1C658004E7530 /* Main.storyboard */; };
 		56B5B1602DD1C65A004E7530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B5B15F2DD1C65A004E7530 /* Assets.xcassets */; };
 		56B5B1632DD1C65A004E7530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B5B1612DD1C65A004E7530 /* LaunchScreen.storyboard */; };
+		56B5B1712DD1D509004E7530 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5B1702DD1D509004E7530 /* WalletManager.swift */; };
+		56B5B1732DD1D577004E7530 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5B1722DD1D577004E7530 /* LaunchViewController.swift */; };
+		56B5B1752DD1D59C004E7530 /* WalletCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5B1742DD1D59C004E7530 /* WalletCreatedViewController.swift */; };
+		56B5B1772DD1D5B2004E7530 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5B1762DD1D5B2004E7530 /* HomeViewController.swift */; };
+		56B5B1792DD1D5D6004E7530 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5B1782DD1D5D6004E7530 /* KeychainService.swift */; };
+		56B5B17C2DD1D8D5004E7530 /* MockWalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5B17B2DD1D8D5004E7530 /* MockWalletManager.swift */; };
+		56E9791D2DD2298F00AA53EE /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 56E9791C2DD2298300AA53EE /* Readme.md */; };
+		56E9791F2DD229A800AA53EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 56E9791E2DD2299F00AA53EE /* .gitignore */; };
+		6D1FB45F81DBCB1BEF67AD01 /* Pods_PayRam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A446EE47B4A523707A7645 /* Pods_PayRam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2213E51857E36E49F4295DFA /* Pods-PayRam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayRam.debug.xcconfig"; path = "Target Support Files/Pods-PayRam/Pods-PayRam.debug.xcconfig"; sourceTree = "<group>"; };
+		46A446EE47B4A523707A7645 /* Pods_PayRam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayRam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B5B1532DD1C658004E7530 /* PayRam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayRam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B5B1562DD1C658004E7530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B5B1582DD1C658004E7530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,16 @@
 		56B5B15F2DD1C65A004E7530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B5B1622DD1C65A004E7530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56B5B1642DD1C65A004E7530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B5B1702DD1D509004E7530 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		56B5B1722DD1D577004E7530 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		56B5B1742DD1D59C004E7530 /* WalletCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCreatedViewController.swift; sourceTree = "<group>"; };
+		56B5B1762DD1D5B2004E7530 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		56B5B1782DD1D5D6004E7530 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		56B5B17A2DD1D885004E7530 /* PayRam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PayRam.entitlements; sourceTree = "<group>"; };
+		56B5B17B2DD1D8D5004E7530 /* MockWalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWalletManager.swift; sourceTree = "<group>"; };
+		56E9791C2DD2298300AA53EE /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		56E9791E2DD2299F00AA53EE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E7E17D69FB19C50B4A5D0CB7 /* Pods-PayRam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayRam.release.xcconfig"; path = "Target Support Files/Pods-PayRam/Pods-PayRam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1FB45F81DBCB1BEF67AD01 /* Pods_PayRam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +62,12 @@
 		56B5B14A2DD1C658004E7530 = {
 			isa = PBXGroup;
 			children = (
+				56E9791E2DD2299F00AA53EE /* .gitignore */,
+				56B5B17E2DD1DBAC004E7530 /* Packages */,
 				56B5B1552DD1C658004E7530 /* PayRam */,
 				56B5B1542DD1C658004E7530 /* Products */,
+				56B5B1822DD1EA04004E7530 /* Frameworks */,
+				A1D5737B536C6CC761B4CC8C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,79 @@
 		56B5B1552DD1C658004E7530 /* PayRam */ = {
 			isa = PBXGroup;
 			children = (
+				56B5B17A2DD1D885004E7530 /* PayRam.entitlements */,
+				56B5B16F2DD1D48B004E7530 /* Controller */,
+				56B5B16D2DD1C6B3004E7530 /* Utils */,
+				56B5B16C2DD1C6A9004E7530 /* Views */,
+				56B5B16A2DD1C698004E7530 /* Models */,
 				56B5B1562DD1C658004E7530 /* AppDelegate.swift */,
 				56B5B1582DD1C658004E7530 /* SceneDelegate.swift */,
 				56B5B15A2DD1C658004E7530 /* ViewController.swift */,
-				56B5B15C2DD1C658004E7530 /* Main.storyboard */,
-				56B5B15F2DD1C65A004E7530 /* Assets.xcassets */,
 				56B5B1612DD1C65A004E7530 /* LaunchScreen.storyboard */,
+				56B5B15F2DD1C65A004E7530 /* Assets.xcassets */,
 				56B5B1642DD1C65A004E7530 /* Info.plist */,
+				56E9791C2DD2298300AA53EE /* Readme.md */,
 			);
 			path = PayRam;
+			sourceTree = "<group>";
+		};
+		56B5B16A2DD1C698004E7530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56B5B1702DD1D509004E7530 /* WalletManager.swift */,
+				56B5B17B2DD1D8D5004E7530 /* MockWalletManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56B5B16C2DD1C6A9004E7530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56B5B15C2DD1C658004E7530 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56B5B16D2DD1C6B3004E7530 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				56B5B1782DD1D5D6004E7530 /* KeychainService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		56B5B16F2DD1D48B004E7530 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56B5B1722DD1D577004E7530 /* LaunchViewController.swift */,
+				56B5B1742DD1D59C004E7530 /* WalletCreatedViewController.swift */,
+				56B5B1762DD1D5B2004E7530 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		56B5B17E2DD1DBAC004E7530 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		56B5B1822DD1EA04004E7530 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A446EE47B4A523707A7645 /* Pods_PayRam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1D5737B536C6CC761B4CC8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2213E51857E36E49F4295DFA /* Pods-PayRam.debug.xcconfig */,
+				E7E17D69FB19C50B4A5D0CB7 /* Pods-PayRam.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +164,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56B5B1672DD1C65A004E7530 /* Build configuration list for PBXNativeTarget "PayRam" */;
 			buildPhases = (
+				FB3209517FF4A48E711E67A6 /* [CP] Check Pods Manifest.lock */,
 				56B5B14F2DD1C658004E7530 /* Sources */,
 				56B5B1502DD1C658004E7530 /* Frameworks */,
 				56B5B1512DD1C658004E7530 /* Resources */,
+				8173A98672C7C35AD6977C4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PayRam;
+			packageProductDependencies = (
+			);
 			productName = PayRam;
 			productReference = 56B5B1532DD1C658004E7530 /* PayRam.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +205,8 @@
 				Base,
 			);
 			mainGroup = 56B5B14A2DD1C658004E7530;
+			packageReferences = (
+			);
 			productRefGroup = 56B5B1542DD1C658004E7530 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,13 +221,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E9791F2DD229A800AA53EE /* .gitignore in Resources */,
 				56B5B1632DD1C65A004E7530 /* LaunchScreen.storyboard in Resources */,
 				56B5B1602DD1C65A004E7530 /* Assets.xcassets in Resources */,
+				56E9791D2DD2298F00AA53EE /* Readme.md in Resources */,
 				56B5B15E2DD1C658004E7530 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8173A98672C7C35AD6977C4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayRam/Pods-PayRam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayRam/Pods-PayRam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayRam/Pods-PayRam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3209517FF4A48E711E67A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayRam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56B5B14F2DD1C658004E7530 /* Sources */ = {
@@ -139,8 +283,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				56B5B15B2DD1C658004E7530 /* ViewController.swift in Sources */,
+				56B5B1732DD1D577004E7530 /* LaunchViewController.swift in Sources */,
+				56B5B1752DD1D59C004E7530 /* WalletCreatedViewController.swift in Sources */,
 				56B5B1572DD1C658004E7530 /* AppDelegate.swift in Sources */,
+				56B5B1712DD1D509004E7530 /* WalletManager.swift in Sources */,
+				56B5B1792DD1D5D6004E7530 /* KeychainService.swift in Sources */,
+				56B5B1772DD1D5B2004E7530 /* HomeViewController.swift in Sources */,
 				56B5B1592DD1C658004E7530 /* SceneDelegate.swift in Sources */,
+				56B5B17C2DD1D8D5004E7530 /* MockWalletManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +432,11 @@
 		};
 		56B5B1682DD1C65A004E7530 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2213E51857E36E49F4295DFA /* Pods-PayRam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PayRam/PayRam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9KB47L37LV;
@@ -295,6 +447,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,9 +463,11 @@
 		};
 		56B5B1692DD1C65A004E7530 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E17D69FB19C50B4A5D0CB7 /* Pods-PayRam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PayRam/PayRam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9KB47L37LV;
@@ -323,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
