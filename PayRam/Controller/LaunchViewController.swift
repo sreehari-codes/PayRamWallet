@@ -12,6 +12,7 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Launch View Controller launched")
+        navigationItem.title = "PayRam"
         let isFirstLaunch = UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
         if !isFirstLaunch {
             // App is being launched for the first time
@@ -24,16 +25,17 @@ class LaunchViewController: UIViewController {
             print("Navigating to Home")
             performSegue(withIdentifier: "showHome", sender: self)
         } else {
-            WalletManager.shared.createWallet { result in
-                DispatchQueue.main.async {
-                    switch result {
-                    case .success(let wallet):
-                        self.performSegue(withIdentifier: "showWalletCreated", sender: (wallet.address, wallet.mnemonic))
-                    case .failure(let error):
-                        self.showAlert(title: "Error", message: error.localizedDescription)
-                    }
-                }
-            }
+            performSegue(withIdentifier: "showWalletCreated", sender: self)
+//            WalletManager.shared.createWallet { result in
+//                DispatchQueue.main.async {
+//                    switch result {
+//                    case .success(let wallet):
+//                        self.performSegue(withIdentifier: "showWalletCreated", sender: (wallet.address, wallet.mnemonic))
+//                    case .failure(let error):
+//                        self.showAlert(title: "Error", message: error.localizedDescription)
+//                    }
+//                }
+//            }
         }
     }
 
@@ -46,9 +48,5 @@ class LaunchViewController: UIViewController {
         }
     }
 
-    func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
-    }
+    
 }

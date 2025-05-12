@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
-        <!--Home View Controller-->
+        <!--PayRam-->
         <scene sceneID="AoY-uV-9Ta">
             <objects>
-                <viewController id="BB0-Sq-EW1" customClass="HomeViewController" customModule="PayRam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PayRam" id="BB0-Sq-EW1" customClass="HomeViewController" customModule="PayRam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="34b-NB-YmJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,35 +87,49 @@
             </objects>
             <point key="canvasLocation" x="817.55725190839689" y="-679.57746478873241"/>
         </scene>
-        <!--Wallet Created View Controller-->
+        <!--PayRam-->
         <scene sceneID="l0K-UY-cUF">
             <objects>
-                <viewController id="60f-mR-pDZ" customClass="WalletCreatedViewController" customModule="PayRam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PayRam" id="60f-mR-pDZ" customClass="WalletCreatedViewController" customModule="PayRam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIb-dF-qxg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKY-uN-JRN">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKY-uN-JRN">
                                 <rect key="frame" x="50" y="260.66666666666669" width="293" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eth Wallet address :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18N-7T-Zmq">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partial Seed phrase :" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-BN-wpH">
+                                <rect key="frame" x="50" y="393" width="293" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eth Wallet address :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18N-7T-Zmq">
                                 <rect key="frame" x="50" y="210.66666666666666" width="161" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partial Seed phrase :" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6c-tm-hwf">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partial Seed phrase :" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6c-tm-hwf">
                                 <rect key="frame" x="50" y="343" width="227" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partial Seed phrase :" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-BN-wpH">
-                                <rect key="frame" x="50" y="393" width="293" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhl-Is-5Rw">
+                                <rect key="frame" x="114" y="580" width="165" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Generate"/>
+                                <connections>
+                                    <action selector="generateWallet:" destination="60f-mR-pDZ" eventType="touchUpInside" id="Tbp-gt-a2A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have a wallet yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8v-w9-MxL">
+                                <rect key="frame" x="88.666666666666686" y="231" width="216" height="484"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -127,19 +141,29 @@
                             <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="18N-7T-Zmq" secondAttribute="trailing" symbolic="YES" id="6nS-ho-BxU"/>
                             <constraint firstItem="18N-7T-Zmq" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="7Mw-pj-Wqt"/>
                             <constraint firstItem="oKY-uN-JRN" firstAttribute="top" secondItem="18N-7T-Zmq" secondAttribute="top" constant="50" id="7dI-Zg-UVW"/>
+                            <constraint firstItem="I8v-w9-MxL" firstAttribute="bottom" secondItem="zhl-Is-5Rw" secondAttribute="bottom" constant="100" id="QgY-6Z-mMo"/>
                             <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" secondItem="s6c-tm-hwf" secondAttribute="trailing" constant="116" id="R2Z-aY-r0M"/>
+                            <constraint firstItem="zhl-Is-5Rw" firstAttribute="centerX" secondItem="g3m-BN-wpH" secondAttribute="centerX" id="V9F-0N-VTa"/>
                             <constraint firstItem="oKY-uN-JRN" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="Wez-YJ-hP0"/>
+                            <constraint firstItem="I8v-w9-MxL" firstAttribute="centerY" secondItem="px8-bI-f7d" secondAttribute="centerY" id="ZE5-DO-990"/>
                             <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" secondItem="oKY-uN-JRN" secondAttribute="trailing" constant="50" id="agQ-L5-rGq"/>
                             <constraint firstItem="g3m-BN-wpH" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="bcr-Fr-Dyo"/>
+                            <constraint firstItem="px8-bI-f7d" firstAttribute="bottom" secondItem="zhl-Is-5Rw" secondAttribute="bottom" constant="169" id="eDy-EO-WMe"/>
                             <constraint firstItem="s6c-tm-hwf" firstAttribute="top" secondItem="oKY-uN-JRN" secondAttribute="bottom" constant="62" id="gEd-L0-Pyy"/>
+                            <constraint firstItem="I8v-w9-MxL" firstAttribute="centerX" secondItem="px8-bI-f7d" secondAttribute="centerX" id="hVi-zz-XWw"/>
                             <constraint firstItem="s6c-tm-hwf" firstAttribute="top" secondItem="dIb-dF-qxg" secondAttribute="top" constant="343" id="u1r-AC-Lfc"/>
                             <constraint firstItem="g3m-BN-wpH" firstAttribute="top" secondItem="s6c-tm-hwf" secondAttribute="top" constant="50" id="uPN-WT-gk8"/>
                             <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" secondItem="g3m-BN-wpH" secondAttribute="trailing" constant="50" id="wiF-Ek-pgY"/>
+                            <constraint firstItem="zhl-Is-5Rw" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="114" id="xX7-CX-igT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jFR-1H-NOk"/>
                     <connections>
                         <outlet property="addressLabel" destination="oKY-uN-JRN" id="bMp-NK-ohG"/>
+                        <outlet property="generateButton" destination="zhl-Is-5Rw" id="xoT-yk-2df"/>
+                        <outlet property="lblAddressTitle" destination="18N-7T-Zmq" id="sy5-nF-4Qb"/>
+                        <outlet property="lblMnemonicTitle" destination="s6c-tm-hwf" id="IjX-7n-VHM"/>
+                        <outlet property="lblNoWalletTitle" destination="I8v-w9-MxL" id="lqe-ME-mc7"/>
                         <outlet property="mnemonicLabel" destination="g3m-BN-wpH" id="Vfi-Mk-8Jq"/>
                     </connections>
                 </viewController>

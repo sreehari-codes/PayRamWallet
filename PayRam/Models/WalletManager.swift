@@ -48,7 +48,7 @@ class WalletManager {
     func createWallet(completion: @escaping (Result<(address: String, mnemonic: String), Error>) -> Void) {
         
         do {
-            
+//            throw NSError(domain: "WalletError", code: 100, userInfo: [NSLocalizedDescriptionKey: "Wallet generation failed"])
             let wallet = HDWallet(strength: 128, passphrase: "")
             guard let address = wallet?.getAddressForCoin(coin: CoinType.ethereum) else {
                 throw NSError(domain: "WalletError", code: 100, userInfo: [NSLocalizedDescriptionKey: "Wallet generation failed"])
