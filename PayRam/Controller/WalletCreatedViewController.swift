@@ -17,6 +17,7 @@ class WalletCreatedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         print("Wallet creation View Controller launched")
         addressLabel.text = walletAddress
 

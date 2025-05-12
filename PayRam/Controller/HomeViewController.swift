@@ -17,7 +17,8 @@ class HomeViewController: UIViewController {
         
         navigationItem.hidesBackButton = true
         addressLabel.text = WalletManager.shared.getWalletAddress() ?? "No wallet found"
-//        addressLabel.text = MockWalletManager.shared.getWalletAddress() ?? "No wallet found"
+
+        print("Address is : \(WalletManager.shared.getWalletAddress() ?? "No wallet found")")
         
     }
 }

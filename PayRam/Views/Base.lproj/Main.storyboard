@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZT-Xu-a4s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZT-Xu-a4s">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,11 +31,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Fgj-kf-aI6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvx-lZ-foN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zZT-Xu-a4s" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTZ-Yq-tDl">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -43,6 +42,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5mr-Y0-8R0"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvx-lZ-foN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
@@ -54,9 +54,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVO-e5-bKZ">
-                                <rect key="frame" x="175" y="201" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Wallet address :" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcI-L5-eFd">
+                                <rect key="frame" x="50" y="178" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVO-e5-bKZ">
+                                <rect key="frame" x="50" y="228" width="293" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,6 +69,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="01O-Vs-sdN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sVO-e5-bKZ" firstAttribute="top" secondItem="RcI-L5-eFd" secondAttribute="top" constant="50" id="2wd-QE-h4G"/>
+                            <constraint firstItem="01O-Vs-sdN" firstAttribute="trailing" secondItem="RcI-L5-eFd" secondAttribute="trailing" constant="96" id="Wcd-SI-bIq"/>
+                            <constraint firstItem="RcI-L5-eFd" firstAttribute="leading" secondItem="01O-Vs-sdN" secondAttribute="leading" constant="50" id="aPI-qo-zpf"/>
+                            <constraint firstItem="01O-Vs-sdN" firstAttribute="trailing" secondItem="sVO-e5-bKZ" secondAttribute="trailing" constant="50" id="sXB-D9-Bi8"/>
+                            <constraint firstItem="sVO-e5-bKZ" firstAttribute="leading" secondItem="01O-Vs-sdN" secondAttribute="leading" constant="50" id="y4h-Cr-oPU"/>
+                            <constraint firstItem="RcI-L5-eFd" firstAttribute="top" secondItem="01O-Vs-sdN" secondAttribute="top" constant="16" id="zdR-Pj-BtH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s7J-8t-ezJ"/>
                     <connections>
@@ -72,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2P-ru-svB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="-679"/>
+            <point key="canvasLocation" x="817.55725190839689" y="-679.57746478873241"/>
         </scene>
         <!--Wallet Created View Controller-->
         <scene sceneID="l0K-UY-cUF">
@@ -82,16 +95,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKY-uN-JRN">
-                                <rect key="frame" x="175" y="166" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKY-uN-JRN">
+                                <rect key="frame" x="50" y="260.66666666666669" width="293" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mnemonic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-BN-wpH">
-                                <rect key="frame" x="156" y="319" width="80" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eth Wallet address :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18N-7T-Zmq">
+                                <rect key="frame" x="50" y="210.66666666666666" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partial Seed phrase :" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6c-tm-hwf">
+                                <rect key="frame" x="50" y="343" width="227" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partial Seed phrase :" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-BN-wpH">
+                                <rect key="frame" x="50" y="393" width="293" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,6 +122,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="px8-bI-f7d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s6c-tm-hwf" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="5Uc-c1-Vjx"/>
+                            <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="18N-7T-Zmq" secondAttribute="trailing" symbolic="YES" id="6nS-ho-BxU"/>
+                            <constraint firstItem="18N-7T-Zmq" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="7Mw-pj-Wqt"/>
+                            <constraint firstItem="oKY-uN-JRN" firstAttribute="top" secondItem="18N-7T-Zmq" secondAttribute="top" constant="50" id="7dI-Zg-UVW"/>
+                            <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" secondItem="s6c-tm-hwf" secondAttribute="trailing" constant="116" id="R2Z-aY-r0M"/>
+                            <constraint firstItem="oKY-uN-JRN" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="Wez-YJ-hP0"/>
+                            <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" secondItem="oKY-uN-JRN" secondAttribute="trailing" constant="50" id="agQ-L5-rGq"/>
+                            <constraint firstItem="g3m-BN-wpH" firstAttribute="leading" secondItem="px8-bI-f7d" secondAttribute="leading" constant="50" id="bcr-Fr-Dyo"/>
+                            <constraint firstItem="s6c-tm-hwf" firstAttribute="top" secondItem="oKY-uN-JRN" secondAttribute="bottom" constant="62" id="gEd-L0-Pyy"/>
+                            <constraint firstItem="s6c-tm-hwf" firstAttribute="top" secondItem="dIb-dF-qxg" secondAttribute="top" constant="343" id="u1r-AC-Lfc"/>
+                            <constraint firstItem="g3m-BN-wpH" firstAttribute="top" secondItem="s6c-tm-hwf" secondAttribute="top" constant="50" id="uPN-WT-gk8"/>
+                            <constraint firstItem="px8-bI-f7d" firstAttribute="trailing" secondItem="g3m-BN-wpH" secondAttribute="trailing" constant="50" id="wiF-Ek-pgY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jFR-1H-NOk"/>
                     <connections>
@@ -108,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXV-yV-6kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="-1356"/>
+            <point key="canvasLocation" x="832.82442748091603" y="-1356.3380281690143"/>
         </scene>
     </scenes>
     <resources>

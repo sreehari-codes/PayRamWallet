@@ -12,7 +12,14 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Launch View Controller launched")
-
+        let isFirstLaunch = UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
+        if !isFirstLaunch {
+            // App is being launched for the first time
+            UserDefaults.standard.setValue(true, forKey: "hasLaunchedBefore")
+            UserDefaults.standard.synchronize()
+            WalletManager.shared.overwriteSecureWalletDetails()
+        }
+        
         if WalletManager.shared.walletExists() {
             print("Navigating to Home")
             performSegue(withIdentifier: "showHome", sender: self)
