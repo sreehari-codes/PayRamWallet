@@ -102,6 +102,8 @@ Initial Launch (Clean State)
 
 - First 3 words of the mnemonic are shown to hint at successful generation, not for restoration
 
+- Post re-installation, the user doesn't want to sync old Keychain data. This was discussed in the initial interview round and interpreted as a vulnerability. So old keychain values are invalidated without user confirmation.
+
 ### Limitations
 
 - No backup/export mechanism for full mnemonic
@@ -137,7 +139,7 @@ Initial Launch (Clean State)
 
 ### Software updation
 
-Mac OS version was outdated and some of my other software environements has some dependencies. Eventually backed everything up and had to update Mac OS and Xcode. This delayed initial progress
+Mac OS version was outdated and some of my other software environements had some dependencies. Eventually everything was backed up and had to update Mac OS and Xcode. This delayed initial progress
 
 ### 3rd Party SDK Integration
 
